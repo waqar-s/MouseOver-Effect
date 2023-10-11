@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Cabin&family=Homemade+Apple&family=Inter:wght@600&family=Josefin+Slab:wght@600&family=Permanent+Marker&family=Poppins&family=Plus+Jakarta+Sans:wght@800&family=Montserrat&family=Raleway:wght@800&family=Ubuntu+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+    font-family: 'Montserrat', Poppins;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*!sc*/
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+
+    --text-color: #1C274C;
+    --text-dim-color: #1c274ce5;
+    --social-icon: #1C274C;
+
+    --text-color: #37352F;
+    --text-dim-color: #37352Fe5;
+    --social-icon: #37352F;
+
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+
+    --white: #ffffff;
+  
+    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-plus: 'Plus Jakarta Sans', 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 15px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#container{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#container h1{
+    font-size: 12vw;
+    font-family: var(--font-plus);
+    color: var(--white)
+}
+
+#container .cursor{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    transition: .1s;
+    mix-blend-mode: difference;
+    display: none;
+}
