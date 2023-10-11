@@ -30,7 +30,7 @@ This is a simple web project that demonstrates a dynamic cursor effect. It featu
 
 ## Customization
 1. You can customize the appearance of the cursor by modifying the CSS in the style.css file.
-2. To change the text content in the container, edit the text inside the <h1> element in the index.html file.
+2. To change the text content in the container, edit the text inside the h1 element in the index.html file.
 3. You can adjust the circle's size, color, and other visual properties in the CSS.
 
 ## Contributing
@@ -40,7 +40,7 @@ Contributions are welcome. If you'd like to improve this project or fix any issu
 2. Create a new branch for your changes.
 3. Make your changes and commit them.
 4. Push your changes to your fork.
-5.Create a pull request, explaining the purpose of your changes.
+5. Create a pull request, explaining the purpose of your changes.
 
 ## License
 This project is licensed under the MIT License. You can find more information in the LICENSE file.
