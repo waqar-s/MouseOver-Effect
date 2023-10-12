@@ -1,132 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam&family=Cabin&family=Homemade+Apple&family=Inter:wght@600&family=Josefin+Slab:wght@600&family=Permanent+Marker&family=Poppins&family=Plus+Jakarta+Sans:wght@800&family=Montserrat&family=Raleway:wght@800&family=Ubuntu+Mono&display=swap");
 
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  overflow: -moz-scrollbars-none;
-  font-family: "Montserrat", Poppins;
-  margin: 0%;
-  padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+    font-family: "Montserrat", Poppins;
+    margin: 0%;
+    padding: 0%;
 }
 
 /*!sc*/
 :root {
-  --dark-navy: #020c1b;
-  --navy: #0a192f;
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
 
-  --text-color: #1c274c;
-  --text-dim-color: #1c274ce5;
-  --social-icon: #1c274c;
+    --text-color: #1c274c;
+    --text-dim-color: #1c274ce5;
+    --social-icon: #1c274c;
 
-  --text-color: #37352f;
-  --text-dim-color: #37352fe5;
-  --social-icon: #37352f;
+    --text-color: #37352f;
+    --text-dim-color: #37352fe5;
+    --social-icon: #37352f;
 
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
 
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
 
-  --white: #ffffff;
+    --white: #ffffff;
 
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
-  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  --font-plus: "Plus Jakarta Sans", "Calibre", "Inter", "San Francisco",
-    "SF Pro Text", -apple-system, system-ui, sans-serif;
+    --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+        system-ui, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --font-plus: "Plus Jakarta Sans", "Calibre", "Inter", "San Francisco",
+        "SF Pro Text", -apple-system, system-ui, sans-serif;
 
-  --fz-xxs: 12px;
-  --fz-xs: 13px;
-  --fz-sm: 14px;
-  --fz-md: 15px;
-  --fz-lg: 18px;
-  --fz-xl: 20px;
-  --fz-xxl: 22px;
-  --fz-heading: 32px;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 15px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
 
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 #container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #22272e;
-  scrollbar-width: none;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #22272e;
+    scrollbar-width: none;
+    overflow: hidden;
 }
 
 #container header {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  padding: 1rem 1.5rem;
-  background-color: #1c2128;
-  width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 1rem 1.5rem;
+    background-color: #1c2128;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h2 {
-  font-family: Homemade Apple;
-  color: var(--white);
-  font-size: 2vw;
+    font-family: Homemade Apple;
+    color: var(--white);
+    font-size: 2vw;
+}
+
+.menu-nav{
+    width: 42px;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 50px;
+    position: relative;
+    right: 0%;
+}
+
+.menu-nav::after{
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 50px;
+    top: 8px;
+    right: 0%;
+}
+
+.menu-nav::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 50px;
+    bottom: 8px;
+    right: 0%;
 }
 
 .hero {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .hero p {
-  color: var(--white);
-  display : inline-flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.hero p span{
- display : flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
- padding: .2rem 1rem;
- border: 2px solid var(--white);
- border-radius: 50px;
- height: 40px;
+.hero p span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: .2rem 1rem;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    height: 40px !important;
 }
 
 .hero p span svg {
-  width: 30px;
-  height: 30px;
-  fill : var(--white)
+    width: 30px;
+    height: 30px;
+    fill: var(--white)
+}
+
+.hero p .diamond svg{
+    width: 22px;
+    height: 22px;
 }
 
 #container .hero h1 {
-  font-size: 7vw;
-  font-family: var(--font-plus);
-  color: var(--white);
-  text-align: center;
+    font-size: 7vw;
+    font-family: var(--font-plus);
+    color: var(--white);
+    text-align: center;
 }
 
 #container .cursor {
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  border-radius: 50px;
-  position: absolute;
-  transition: 0.1s;
-  mix-blend-mode: difference;
-  display: none;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.1s;
+    mix-blend-mode: difference;
+    display: none;
 }
