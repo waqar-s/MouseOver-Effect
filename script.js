@@ -7,6 +7,6 @@ main.addEventListener("mousemove", (dets) =>{
     circle.style.top = dets.y + "px";  // Added "px" to specify the unit
 });
 
-window.addEventListener("mouseleave", () => {
+main.addEventListener("mouseleave", () => {
     circle.style.display = "none";
 });
