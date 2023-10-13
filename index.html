@@ -9,12 +9,14 @@
 </head>
 
 <body id="container">
-    <header>
+    <header id="header">
         <div class="logo">
             <h2>Waqar Baloch</h2>
         </div>
 
+        <div class="menu-nav-container">
             <div class="menu-nav"></div>
+        </div>
     </header>
 
     <div id="settingsModal" class="modal menu-nav-container" style="display:none;">
@@ -38,14 +40,23 @@
             </div>
 
             <ul>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Expertise</li></a>
-                <a href=""><li>Services</li></a>
-                <a href=""><li>Gallery</li></a>
+                <a href="#aboutme" id="aboutMeTag">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Expertise</li>
+                </a>
+                <a href="">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
             </ul>
 
         </div>
     </div>
+
 
     <div class="hero">
         <p>
@@ -79,6 +90,10 @@
             Frontend Developer & <br />
             Web UI UX Designer
         </h1>
+    </div>
+
+    <div id="aboutme" class="aboutme-container"  style="display:none;">
+        hello
     </div>
 
     <div class="cursor" style="display: none"></div>

@@ -13,12 +13,24 @@ main.addEventListener("mouseleave", () => {
 
 
 
-let ham = document.querySelector(".menu-nav");
+let ham = document.querySelector(".menu-nav-container");
 let menuContainer = document.getElementById("settingsModal");
 let crossBtn = document.getElementById("closeSettings");
+let aboutMe = document.getElementById("aboutme");
+let aboutMeTag = document.getElementById("aboutMeTag");
+let head = document.getElementById("header");
 
 ham.addEventListener("click", () => {
     menuContainer.style.display = "block"
+    circle.style.zIndex = "999"
+})
+
+aboutMeTag.addEventListener("click", () => {
+    aboutMe.style.display = "block"
+    menuContainer.style.display = "none"
+    circle.style.zIndex = "999"
+    aboutMe.style.zIndex = "1"
+    head.style.zIndex = "999"
 })
 
 crossBtn.addEventListener("click", () => {
