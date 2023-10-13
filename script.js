@@ -10,3 +10,17 @@ main.addEventListener("mousemove", (dets) =>{
 main.addEventListener("mouseleave", () => {
     circle.style.display = "none";
 });
+
+
+
+let ham = document.querySelector(".menu-nav");
+let menuContainer = document.getElementById("settingsModal");
+let crossBtn = document.getElementById("closeSettings");
+
+ham.addEventListener("click", () => {
+    menuContainer.style.display = "block"
+})
+
+crossBtn.addEventListener("click", () => {
+    menuContainer.style.display = "none"
+})
