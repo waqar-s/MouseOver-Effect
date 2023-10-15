@@ -338,14 +338,14 @@ header h2 {
 
 .first-Aboutme-container {
   color: var(--white);
-  padding: 0.1rem 1.5rem;
+  padding: 0.1rem 2rem;
   width: 100%;
   height: 100%;
   display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   position: relative;
 }
@@ -378,6 +378,8 @@ header h2 {
 
 .aboutme-description{
     height: 100%;
+    grid-column-start: 0;
+    grid-column-end: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,5 +389,45 @@ header h2 {
   font-family: Inter;
   color: #b2b9c0;
   line-height: 1.4rem;
-  font-size: 15px;
+  font-size: 1rem;
+}
+
+.aboutme-description a,
+.aboutme-description span{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.external-btn-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 45px;
+  margin-top: 2rem;
+}
+
+.external-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  border: 2px solid #b2b9c0;
+  height: 45px;
+  padding: .4rem 1.5rem;
+  border-radius: 2px;
+}
+
+.external-btn svg{
+  fill: #b2b9c0;
+}
+
+.aboutne-heading{
+  position: absolute;
+  font-size: 14vw;
+  font-family: var(--font-plus);
+  color: #b2b9c009 ;
+  bottom: 20px;
+  right: 10px;
 }

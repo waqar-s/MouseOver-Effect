@@ -20,7 +20,6 @@ let aboutMe = document.getElementById("aboutme");
 let aboutMeTag = document.getElementById("aboutMeTag");
 let head = document.getElementById("header");
 
-let secName = document.getElementById("section-name")
 
 ham.addEventListener("click", () => {
     menuContainer.style.display = "block"
@@ -29,7 +28,6 @@ ham.addEventListener("click", () => {
 
 aboutMeTag.addEventListener("click", () => {
     aboutMe.style.display = "flex"
-    secName.innerText = "| About Me"
     menuContainer.style.display = "none"
     circle.style.zIndex = "999"
     aboutMe.style.zIndex = "1"
